@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sprout AI — Smart City Sustainability Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="33" rx="10" ry="3" fill="#4A7C2F" opacity="0.35"/>
+            <path d="M20 32 C20 26 20 20 20 14" stroke="#4A7C2F" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M20 24 C16 21 11 17 9 10 C15 11 19 16 20 21" fill="#A8D08D" stroke="#4A7C2F" stroke-width="0.8"/>
+            <path d="M20 20 C24 17 29 13 31 6 C25 7 21 12 20 17" fill="#2D5016" stroke="#4A7C2F" stroke-width="0.8"/>
+            <circle cx="20" cy="13" r="2.2" fill="#4A7C2F"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">SPROUTAI</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#sdg">SDG 11</a></li>
+        <li><a href="#" class="nav-cta" id="navChatBtn">Chat Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-botanical hero-botanical--left" aria-hidden="true"></div>
+    <div class="hero-botanical hero-botanical--right" aria-hidden="true"></div>
+    <div class="hero-container fade-in">
+      <div class="hero-badge">🌿 SDG 11 · Sustainable Cities &amp; Communities</div>
+      <h1 class="hero-headline">Your Smart Guide to a<br /><span class="headline-accent">Sustainable City</span></h1>
+      <p class="hero-sub">
+        Report civic issues, discover eco-friendly tips, and explore government sustainability schemes —
+        all through a single AI-powered conversation, in English or Hindi.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" id="heroChatBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Chat with Sprout AI
+        </button>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Core Services</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Languages</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">SDG 11</span><span class="stat-label">Aligned</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST STRIP ═══ -->
+  <div class="trust-strip">
+    <div class="trust-container">
+      <div class="trust-item">
+        <span class="trust-icon">🔒</span>
+        <span>No Personal Data Stored</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">🏛️</span>
+        <span>Government-Verified Links</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">🌐</span>
+        <span>Bilingual Support</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about" id="about">
+    <div class="section-botanical section-botanical--tl" aria-hidden="true"></div>
+    <div class="section-botanical section-botanical--br" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Everything You Need for a Greener City</h2>
+        <p class="section-sub">Sprout AI brings civic intelligence and sustainability guidance into one friendly conversation.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card fade-in" style="--delay:0.1s" data-quickreply="Report a City Problem">
+          <div class="card-icon card-icon--red">🚨</div>
+          <h3 class="card-title">Report City Issues</h3>
+          <p class="card-desc">Know exactly who to call or which app to use for garbage pileups, broken streetlights, water leaks, or road damage. We guide you to the right authority instantly.</p>
+          <button class="card-cta report-btn">Report Now →</button>
+        </div>
+        <div class="card fade-in" style="--delay:0.2s" data-quickreply="Sustainability Tips">
+          <div class="card-icon card-icon--green">🌱</div>
+          <h3 class="card-title">Get Eco Tips</h3>
+          <p class="card-desc">Practical, daily-life sustainability tips for energy saving, water conservation, waste sorting, and green commuting — tailored for Indian urban households.</p>
+          <button class="card-cta tips-btn">Get Tips →</button>
+        </div>
+        <div class="card fade-in" style="--delay:0.3s" data-quickreply="Government Schemes">
+          <div class="card-icon card-icon--blue">🏛️</div>
+          <h3 class="card-title">Discover Schemes</h3>
+          <p class="card-desc">Learn about PM Surya Ghar Yojana, Jal Jeevan Mission, Swachh Bharat Mission and more — eligibility, benefits, and direct application links explained clearly.</p>
+          <button class="card-cta schemes-btn">Explore →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOW IT WORKS ═══ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Simple Process</span>
+        <h2 class="section-title">How Sprout AI Works</h2>
+        <p class="section-sub">Three simple steps to a smarter, greener city experience.</p>
+      </div>
+      <div class="steps-wrapper">
+        <div class="step fade-in" style="--delay:0.1s">
+          <div class="step-num">1</div>
+          <div class="step-icon">💬</div>
+          <h3 class="step-title">Open the Chat</h3>
+          <p class="step-desc">Tap the floating Sprout AI icon or click "Chat Now". Type or speak your question in English or Hindi.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A8D08D" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+        <div class="step fade-in" style="--delay:0.2s">
+          <div class="step-num">2</div>
+          <div class="step-icon">🤖</div>
+          <h3 class="step-title">AI Understands You</h3>
+          <p class="step-desc">Our AI — powered by IBM Granite — comprehends your civic or sustainability query and generates a detailed, helpful response.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A8D08D" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+        <div class="step fade-in" style="--delay:0.3s">
+          <div class="step-num">3</div>
+          <div class="step-icon">✅</div>
+          <h3 class="step-title">Take Action</h3>
+          <p class="step-desc">Get direct links, helpline numbers, app names, or step-by-step guidance to solve your problem or apply for a scheme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SDG SECTION ═══ -->
+  <section class="sdg-section" id="sdg">
+    <div class="section-botanical section-botanical--tr" aria-hidden="true"></div>
+    <div class="container">
+      <div class="sdg-inner fade-in">
+        <div class="sdg-badge-wrap">
+          <div class="sdg-badge">
+            <div class="sdg-badge-top">SDG</div>
+            <div class="sdg-badge-num">11</div>
+            <div class="sdg-badge-bot">SUSTAINABLE<br/>CITIES</div>
+          </div>
+          <p class="sdg-un-text">United Nations<br/>Sustainable Development Goal</p>
+        </div>
+        <div class="sdg-content">
+          <span class="section-tag">Our Commitment</span>
+          <h2 class="section-title">Aligned with UN SDG 11</h2>
+          <p class="sdg-desc">
+            <strong>Sustainable Development Goal 11</strong> calls for making cities inclusive, safe, resilient, and sustainable. Sprout AI directly supports this mission by empowering Indian citizens with AI-driven civic guidance.
+          </p>
+          <ul class="sdg-list">
+            <li>🏙️ Faster resolution of urban civic issues</li>
+            <li>♻️ Promoting sustainable consumption patterns</li>
+            <li>💧 Connecting citizens to clean water &amp; sanitation schemes</li>
+            <li>🌳 Supporting green urban infrastructure awareness</li>
+            <li>🤝 Making government schemes accessible to all</li>
+          </ul>
+          <button class="btn-primary sdg-chat-btn">Start the Conversation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-botanical" aria-hidden="true"></div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+            <ellipse cx="20" cy="33" rx="10" ry="3" fill="#A8D08D" opacity="0.5"/>
+            <path d="M20 32 C20 26 20 20 20 14" stroke="#A8D08D" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M20 24 C16 21 11 17 9 10 C15 11 19 16 20 21" fill="#A8D08D"/>
+            <path d="M20 20 C24 17 29 13 31 6 C25 7 21 12 20 17" fill="#E8F5E0"/>
+            <circle cx="20" cy="13" r="2.2" fill="#A8D08D"/>
+          </svg>
+          <span class="footer-logo-text">SPROUTAI</span>
+        </div>
+        <p class="footer-tagline">Your smart city sustainability guide for a greener India.</p>
+        <div class="footer-badges">
+          <span class="tech-badge">⚡ Powered by Botpress + IBM Granite</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#sdg">SDG 11</a></li>
+          <li><a href="#" class="footer-chat-link">Chat with AI</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Government Resources</h4>
+        <ul>
+          <li><a href="https://pmsuryaghar.gov.in" target="_blank" rel="noopener">PM Surya Ghar Yojana</a></li>
+          <li><a href="https://jaljeevanmission.gov.in" target="_blank" rel="noopener">Jal Jeevan Mission</a></li>
+          <li><a href="https://swachhbharatmission.gov.in" target="_blank" rel="noopener">Swachh Bharat Mission</a></li>
+          <li><a href="https://smartcities.gov.in" target="_blank" rel="noopener">Smart Cities Mission</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>SDG Commitment</h4>
+        <p class="footer-sdg-text">Aligned with <strong>United Nations SDG 11</strong> — Sustainable Cities and Communities.</p>
+        <div class="sdg-mini-badge">SDG 11</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sprout AI · Built for Indian Citizens · All Rights Reserved</p>
+      <p class="footer-credit">🌱 Created as part of the <strong>1M1B AI for Sustainability Internship</strong></p>
+    </div>
+  </footer>
+
+  <!-- ═══ CHATBOT WIDGET ═══ -->
+  <button class="chat-fab" id="chatFab" aria-label="Open Sprout AI Chat">
+    <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+      <path d="M20 32 C20 26 20 20 20 14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M20 24 C16 21 11 17 9 10 C15 11 19 16 20 21" fill="white"/>
+      <path d="M20 20 C24 17 29 13 31 6 C25 7 21 12 20 17" fill="#A8D08D"/>
+      <circle cx="20" cy="13" r="2.5" fill="white"/>
+    </svg>
+    <span class="chat-fab-pulse"></span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-label="Sprout AI Chat" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-left">
+        <div class="chat-avatar">
+          <svg width="20" height="20" viewBox="0 0 40 40" fill="none">
+            <path d="M20 32 C20 26 20 20 20 14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M20 24 C16 21 11 17 9 10 C15 11 19 16 20 21" fill="white"/>
+            <path d="M20 20 C24 17 29 13 31 6 C25 7 21 12 20 17" fill="#A8D08D"/>
+            <circle cx="20" cy="13" r="2.5" fill="white"/>
+          </svg>
+        </div>
+        <div class="chat-header-info">
+          <span class="chat-name">Sprout AI</span>
+          <span class="chat-status"><span class="status-dot"></span> Online</span>
+        </div>
+      </div>
+      <div class="chat-header-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+        <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="typing-indicator" id="typingIndicator">
+      <div class="typing-bubble"><span></span><span></span><span></span></div>
+    </div>
+    <div class="chat-input-area">
+      <div class="chat-input-row">
+        <input type="text" class="chat-input" id="chatInput"
+          placeholder="Type your question..." autocomplete="off"
+          aria-label="Chat message input" />
+        <button class="mic-btn" id="micBtn" aria-label="Voice input" title="Speak your question">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+            <line x1="12" y1="19" x2="12" y2="23"/>
+            <line x1="8" y1="23" x2="16" y2="23"/>
+          </svg>
+        </button>
+        <button class="send-btn" id="sendBtn" aria-label="Send message">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
